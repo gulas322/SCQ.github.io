@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>表单标签</title>
 </head>
-<body text="aqua" bgcolor="#6495ed" background="images/curry.jpg">
+<body text="aqua" bgcolor="#6495ed">
 <!--form是用来做输入框的-->
 <!--密码里type填了password才能保证用户输入时密码不被显示，例如******的形式-->
 <!-- name:表单名称
@@ -16,7 +16,26 @@ get和post的区别：
       ?username=zhangsan&password=123&sex=male&hobby=football&hobby=basketball&city=tj#
      (2)get提交相对不安全；post提交相对安全
      (3)get提交有大小限制，根据浏览器不同而不同；post不限制大小-->
-    
+    <font color="blue" size= "5" align="center">SCQ的网站2.0版</font>
+    <table border="2" width="50%" bgcolor="#7fffd4" align="center">
+<!--  表头      -->
+          <caption>英语四级考试成绩录入</caption>
+          <tr align="center">
+              <th>姓名</th>
+              <th>口试</th>
+              <th>笔试</th>
+          </tr>
+          <tr align="center">
+              <td>张三</td>
+              <td>60</td>
+              <td>425</td>
+          </tr>
+          <tr align="center">
+              <td>李四</td>
+              <td>96</td>
+              <td>298</td>
+          </tr>
+      </table>
     <form name="myform" action="" method="post" align="center">
         姓名：<input name="username" type="text"><br>
         密码：<input name="password" type="password"><br>
