@@ -1,3 +1,58 @@
-<p>HELLO 大家好</p>
-<p>我是孙传庆，这是我的第一个个人网站！</p>
-<p>很高兴见到你，以后还会再见到的</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+<!--form是用来做输入框的-->
+<!--密码里type填了password才能保证用户输入时密码不被显示，例如******的形式-->
+<!-- name:表单名称
+        action:提交的路径地址
+        method:提交方式（get，post，put，delete），其中get和post使用的多，如果不明确指出，则默认使用get方式。
+
+get和post的区别：
+     (1)get提交将数据加在地址栏的后面，格式?name=value&name=value；post提交将数据封装在请求体中
+      ?username=zhangsan&password=123&sex=male&hobby=football&hobby=basketball&city=tj#
+     (2)get提交相对不安全；post提交相对安全
+     (3)get提交有大小限制，根据浏览器不同而不同；post不限制大小-->
+    <form name="myform" action="" method="post" align="center">
+        姓名：<input name="username" type="text"><br>
+        密码：<input name="password" type="password"><br>
+<!--  checked="checked"表示默认选中   -->
+<!--  radio是单选框   -->
+        性别：<input name="sex" type="radio" value="male" checked="checked">男
+             <input name="sex" type="radio" value="female">女
+        <br>
+<!--checkbox是复选框-->
+        爱好：
+             <input name="hobby" type="checkbox" value="football">足球
+             <input name="hobby" type="checkbox" value="basketball">篮球
+             <input name="hobby" type="checkbox" value="vollyball">棒球
+        <br>
+
+<!--  下拉列表      -->
+        地址：<select name="province" >
+        <option value="gd">广东</option>
+        <option value="ah">安徽</option>
+        <option value="hn">河南</option>
+    </select>
+        <br>
+<!--      上传  -->
+        上传：<input type="file" name="photo">
+        <br>
+
+        备注：<textarea name="remark" cols="25" rows="10">
+        好好学习
+    </textarea>
+        <br>
+        <input type="submit" value="提交">
+        <input type="button" value="按钮">
+        <input type="reset" value="重置">
+<!--      隐含域  -->
+        <input type="hidden" name="hide" value="小老鼠">
+
+    </form>
+
+</body>
+</html>
