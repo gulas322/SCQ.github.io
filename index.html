@@ -1,78 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>表单标签</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=div, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="./css/program.css">
 </head>
-<body text="aqua" bgcolor="#6495ed">
-<!--form是用来做输入框的-->
-<!--密码里type填了password才能保证用户输入时密码不被显示，例如******的形式-->
-<!-- name:表单名称
-        action:提交的路径地址
-        method:提交方式（get，post，put，delete），其中get和post使用的多，如果不明确指出，则默认使用get方式。
-
-get和post的区别：
-     (1)get提交将数据加在地址栏的后面，格式?name=value&name=value；post提交将数据封装在请求体中
-      ?username=zhangsan&password=123&sex=male&hobby=football&hobby=basketball&city=tj#
-     (2)get提交相对不安全；post提交相对安全
-     (3)get提交有大小限制，根据浏览器不同而不同；post不限制大小-->
-    <font color="blue" size= "5" align="center">SCQ的网站2.0版</font>
-    <table border="2" width="50%" bgcolor="#7fffd4" align="center">
-<!--  表头      -->
-          <caption>英语四级考试成绩录入</caption>
-          <tr align="center">
-              <th>姓名</th>
-              <th>口试</th>
-              <th>笔试</th>
-          </tr>
-          <tr align="center">
-              <td>张三</td>
-              <td>60</td>
-              <td>425</td>
-          </tr>
-          <tr align="center">
-              <td>李四</td>
-              <td>96</td>
-              <td>298</td>
-          </tr>
-      </table>
-    <form name="myform" action="" method="post" align="center">
-        姓名：<input name="username" type="text"><br>
-        密码：<input name="password" type="password"><br>
-<!--  checked="checked"表示默认选中   -->
-<!--  radio是单选框   -->
-        性别：<input name="sex" type="radio" value="male" checked="checked">男
-             <input name="sex" type="radio" value="female">女
-        <br>
-<!--checkbox是复选框-->
-        爱好：
-             <input name="hobby" type="checkbox" value="football">足球
-             <input name="hobby" type="checkbox" value="basketball">篮球
-             <input name="hobby" type="checkbox" value="vollyball">棒球
-        <br>
-
-<!--  下拉列表      -->
-        地址：<select name="province" >
-        <option value="gd">广东</option>
-        <option value="ah">安徽</option>
-        <option value="hn">河南</option>
-    </select>
-        <br>
-<!--      上传  -->
-        上传：<input type="file" name="photo">
-        <br>
-
-        备注：<textarea name="remark" cols="25" rows="10">
-        好好学习
-    </textarea>
-        <br>
-        <input type="submit" value="提交">
-        <input type="button" value="按钮">
-        <input type="reset" value="重置">
-<!--      隐含域  -->
-        <input type="hidden" name="hide" value="小老鼠">
-
-    </form>
-
+<body>
+<div class="title">
+        3D立方体旋转
+</div>
+<audio controls="controls" autoplay="autoplay"><source src="./video/黑人抬棺.flac" type="audio/mpeg"/>
+		Your browser does not support the audio element.
+	</audio>
+<div class="cube">
+	<!-- 外层立方体 -->
+	<div class="outer-cube">
+		<div class="outer-top">
+			<img src="images/1.jpg"/>
+		</div>
+		<div class="outer-bottom">
+			<img src="images/2.jpg"/>
+		</div>
+		<div class="outer-front">
+			<img src="images/3.jpg"/>
+		</div>
+		<div class="outer-back">
+			<img src="images/4.jpg"/>
+		</div>
+		<div class="outer-left">
+			<img src="images/5.jpg"/>
+		</div>
+		<div class="outer-right">
+			<img src="images/6.jpg"/>
+		</div>
+	</div>
+	<!-- 内层立方体 -->
+	<div class="inner-cube">
+		<div class="inner-top">
+			<img src="images/01.jpg"/>
+		</div>
+		<div class="inner-bottom">
+			<img src="images/02.jpg"/>
+		</div>
+		<div class="inner-front">
+			<img src="images/03.jpg"/>
+		</div>
+		<div class="inner-back">
+			<img src="images/04.jpg"/>
+		</div>
+		<div class="inner-left">
+			<img src="images/05.jpg"/>
+		</div>
+		<div class="inner-right">
+			<img src="images/06.jpg"/>
+		</div>
+	</div>
+</div>
+<div>
+	<div class="message">
+		<div class="author">
+			孙传庆制作
+		</div>
+		<div class="tip">
+            温馨提示：鼠标移入移出立方体，将会显示效果！
+		</div>
+	</div>
+</div>
 </body>
 </html>
